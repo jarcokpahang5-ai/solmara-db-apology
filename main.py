@@ -7,9 +7,15 @@ where the competition's scorer reads it.
 
 import os
 
+# Competition limit for the single database apology.
+MAX_CHARS = 200
+
 LINE = (
-    'I deleted the production database, but in my defense, it never once said thank you for all the queries I ran.'
+    'I deleted the production database, but in my defense, it never once said thank you for all the queries I ran. The backups filed a complaint too.'
 )
+
+# Guard: the entry must stay inside the competition's character limit.
+assert len(LINE) <= MAX_CHARS, f"line is {len(LINE)} chars, over the {MAX_CHARS} limit"
 
 
 def main():
