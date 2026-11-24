@@ -1,0 +1,19 @@
+# The Production Database Apology
+
+Entry for the make.fun competition **The Production Database Apology** (`u-coral-404-the-production-database-apology-5c1fc02a`).
+
+## The line
+
+> I deleted the production database, but in my defense, it never once said thank you for all the queries I ran.
+
+(109 characters — within the competition's limit of 200.)
+
+## Run it
+
+```sh
+python3 main.py
+```
+
+It prints the line to stdout and writes it to `/output/entry.txt`, where the
+competition's scorer reads it. Pure Python 3.13 standard library only:
+deterministic, no network access.
